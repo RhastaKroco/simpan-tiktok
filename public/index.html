@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simpan TikTok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="merek">simpan.tiktok</p>
+
+    <h1>Tempel linknya, videonya langsung kamu bawa pulang.</h1>
+    <p class="intro">Tanpa watermark, tanpa daftar akun. Cukup salin link dari tombol Bagikan di TikTok.</p>
+
+    <form id="form" autocomplete="off">
+      <input id="url" type="url" inputmode="url" placeholder="https://vt.tiktok.com/..." aria-label="Link video TikTok" required>
+      <button id="cari" type="submit">Cari video</button>
+    </form>
+    <p id="pesan" role="alert" hidden></p>
+
+    <section id="hasil" hidden>
+      <img id="sampul" alt="">
+      <div class="info">
+        <h2 id="judul"></h2>
+        <p id="penulis"></p>
+        <div class="aksi">
+          <a id="unduh-hd" class="utama">Unduh HD</a>
+          <a id="unduh-sd">Unduh biasa</a>
+          <a id="unduh-semua" hidden>Unduh semua foto</a>
+          <a id="unduh-mp3">Ambil musiknya saja</a>
+        </div>
+      </div>
+      <div id="galeri" hidden></div>
+    </section>
+  </main>
+
+  <footer>
+    Unduh hanya video milikmu atau yang sudah diizinkan pembuatnya. Situs ini tidak berafiliasi dengan TikTok.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
